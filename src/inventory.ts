@@ -32,7 +32,8 @@ const addProduct = () => {
     const productCategory = categoryInput.value.trim();
 
     if (productName && !isNaN(productPrice) && productCategory) {
-        products.push({ id: productId++, name: productName, price: productPrice, category: productCategory });
+        const newProduct: Product = { id: productId++, name: productName, price: productPrice, category: productCategory };
+        products = [...products, newProduct];
         productInput.value = '';
         priceInput.value = '';
         categoryInput.value = '';
