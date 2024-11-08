@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Inventario</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <h1>Gestión de Inventario</h1>
+    <input type="text" id="productInput" placeholder="Nombre del producto" />
+    <input type="number" id="priceInput" placeholder="Precio" />
+    <input type="text" id="categoryInput" placeholder="Categoría" />
+    <button onclick="addProduct()">Agregar Producto</button>
+    <div id="inventory-list"></div>
+    <div id="inventory-report"></div>
+    <script type="module" src="/src/main.ts?app=inventory"></script>
+</body>
+</html>

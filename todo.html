@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tareas</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <h1>Gestión de Tareas</h1>
+    <input type="text" id="taskInput" placeholder="Nueva tarea" />
+    <select id="priorityInput">
+        <option value="alta">Alta</option>
+        <option value="media">Media</option>
+        <option value="baja">Baja</option>
+    </select>
+    <button onclick="addTask()">Agregar Tarea</button>
+    <div id="task-list"></div>
+    <div id="task-summary"></div>
+    <script type="module" src="/src/main.ts?app=tasks"></script>
+</body>
+</html>
